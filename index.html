@@ -96,7 +96,7 @@ body { font-family: var(--font-body); min-height: 100vh; }
 .hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: rgba(0,0,0,.42);
+  background: transparent;
   pointer-events: none;
 }
 .hero-eyebrow {
@@ -507,10 +507,12 @@ body { font-family: var(--font-body); min-height: 100vh; }
 <div id="panel-vitrine" class="tab-panel active">
 
   <div class="hero">
-    <div class="hero-eyebrow">✦ Achadinhos selecionados</div>
+    <div style="display:inline-block;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);border-radius:20px;padding:32px 40px 36px;max-width:560px;margin:0 auto;">
+    <div class="hero-eyebrow" style="margin-bottom:16px">✦ Achadinhos selecionados</div>
     <h1>Os melhores preços,<br><em>encontrados pra você</em></h1>
     <p>Shopee, Mercado Livre, Amazon e AliExpress — curadoria diária de ofertas que valem a pena.</p>
-    <div class="platforms-row">
+  </div>
+  <div class="platforms-row" style="margin-top:20px">
       <span class="plat-pill shopee">🟠 Shopee</span>
       <span class="plat-pill ml">🟡 Mercado Livre</span>
       <span class="plat-pill amazon">📦 Amazon</span>
