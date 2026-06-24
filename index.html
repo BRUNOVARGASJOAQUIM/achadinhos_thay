@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vitrine da Thay</title>
+<title>Vitrine da Helena</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
 <style>
 /* ─── RESET & TOKENS ─────────────────────────────────────────── */
@@ -87,7 +87,9 @@ body { font-family: var(--font-body); min-height: 100vh; }
 #panel-vitrine { background: var(--bg); }
 
 .hero {
-  background: linear-gradient(135deg, #1a0a0c 0%, #2d1215 50%, #1a0a0c 100%);
+  background:
+    linear-gradient(135deg, rgba(26,10,12,.82) 0%, rgba(45,18,21,.75) 50%, rgba(26,10,12,.82) 100%),
+    url('hero.png') center center / cover no-repeat;
   padding: 56px 24px 64px;
   text-align: center;
   position: relative;
@@ -96,7 +98,7 @@ body { font-family: var(--font-body); min-height: 100vh; }
 .hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(196,136,142,.18) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(196,136,142,.15) 0%, transparent 70%);
   pointer-events: none;
 }
 .hero-eyebrow {
@@ -494,7 +496,7 @@ body { font-family: var(--font-body); min-height: 100vh; }
 
 <!-- ─── TAB BAR ─────────────────────────────────────────────── -->
 <div id="tab-bar">
-  <span class="tab-logo" id="secret-logo" onclick="secretClick()" style="cursor:default;user-select:none">✦ Vitrine da Thay</span>
+  <span class="tab-logo" id="secret-logo" onclick="secretClick()" style="cursor:default;user-select:none">✦ Vitrine da Helena</span>
   <button class="tab-btn active" id="tab-btn-vitrine" onclick="switchTab('vitrine',this)">🛍 Vitrine</button>
   <button class="tab-btn" id="tab-btn-admin" style="display:none" onclick="switchTab('admin',this)">⚙️ Admin</button>
 </div>
@@ -543,7 +545,7 @@ body { font-family: var(--font-body); min-height: 100vh; }
   </div>
 
   <footer class="v-footer">
-    <strong>Vitrine da Thay</strong>
+    <strong>Vitrine da Helena</strong>
     <p style="margin-top:8px">Curadoria de achadinhos • Shopee • Mercado Livre • Amazon • AliExpress</p>
   </footer>
 </div>
@@ -686,7 +688,7 @@ body { font-family: var(--font-body); min-height: 100vh; }
 /* ══════════════════════════════════════════════════════════════
    CONFIGURAÇÃO — cole aqui a URL do seu Web App após publicar
 ══════════════════════════════════════════════════════════════ */
-const API_URL = 'https://script.google.com/macros/s/AKfycbznJ9W88Smmc42s8Z2ukEmRkMu4C3D1ZDfzjzSjLRKd7hEQ08NffoXSMXin-5U9dKt5/exec';
+const API_URL = 'COLE_AQUI_A_URL_DO_WEB_APP';
 const PASS    = 'thay2024';
 
 /* ── Estado global ── */
