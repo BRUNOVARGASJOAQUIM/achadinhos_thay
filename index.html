@@ -96,7 +96,7 @@ body { font-family: var(--font-body); min-height: 100vh; }
 .hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(196,136,142,.15) 0%, transparent 70%);
+  background: rgba(0,0,0,.42);
   pointer-events: none;
 }
 .hero-eyebrow {
@@ -117,17 +117,19 @@ body { font-family: var(--font-body); min-height: 100vh; }
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(28px, 6vw, 48px);
-  color: #f0ece8;
+  color: #ffffff;
   line-height: 1.15;
   margin-bottom: 14px;
+  text-shadow: 0 2px 12px rgba(0,0,0,.7), 0 1px 3px rgba(0,0,0,.9);
 }
 .hero h1 em { color: var(--accent); font-style: italic; }
 .hero p {
-  color: rgba(240,236,232,.6);
+  color: rgba(255,255,255,.9);
   font-size: 15px;
   max-width: 380px;
   margin: 0 auto 32px;
   line-height: 1.6;
+  text-shadow: 0 1px 6px rgba(0,0,0,.8);
 }
 .platforms-row {
   display: flex;
